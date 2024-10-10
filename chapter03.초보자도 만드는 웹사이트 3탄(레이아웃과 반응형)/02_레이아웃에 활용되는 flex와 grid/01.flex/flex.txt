@@ -1,0 +1,13 @@
+justify-content : 주축 정렬방법 지정
+
+align-item : 교차축(기본값 수직)에서 정렬방법 지정
+
+align-self : align-item으로 지정된 아이템중 특정 아이템을 따로 정렬하고싶을때 사용
+
+align-content : 교차축에서 줄 간격 조정
+
+flex-direction : 주축 방향 지정
+
+flex-wrap : 여러줄로 정렬할건지 지정
+
+flex-flow : flex-direction과 flex-wrap을 동시에 지정

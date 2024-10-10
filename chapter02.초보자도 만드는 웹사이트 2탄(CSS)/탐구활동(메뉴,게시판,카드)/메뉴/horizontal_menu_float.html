@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         *,
+         body {
+            margin: 0;
+            padding: 0;
+         }
+
+         ul {
+            /* 하위 태그에 float 적용시 높이가 사라지는 문제를 해결해줌  */
+            overflow: hidden;
+            list-style-type: none;
+            background-color: #333;
+         }
+
+         li {
+            width: 80px;
+            float: left;
+         }
+         a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 14px 16px;
+            text-align: center;
+         }
+         .active {
+            background-color: #448ada;
+         }
+         a:hover {
+            background-color: #4d4c4c;
+         }
+      </style>
+   </head>
+   <body>
+      <ul>
+         <li>
+            <a href="#">홈</a>
+         </li>
+         <li>
+            <a href="#">뉴스</a>
+         </li>
+         <li>
+            <a href="#">블로그</a>
+         </li>
+         <li style="float: right">
+            <a href="#" class="active">로그인</a>
+         </li>
+      </ul>
+   </body>
+</html>

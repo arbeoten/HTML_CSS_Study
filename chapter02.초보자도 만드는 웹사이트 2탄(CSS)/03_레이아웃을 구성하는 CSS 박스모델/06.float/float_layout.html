@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         body {
+            margin: 0 auto;
+            width: 960px;
+         }
+         #wrap {
+            height: 600px;
+         }
+         #aside {
+            /* height에 %를 적용할 때에는 부모 태그에 높이가 있어야 한다. */
+            height: 100%;
+            /* 전체 body의 width가 960px이므로 aside+section의 너비를 더한 값이 960px를 넘어선 안된다. */
+            width: 200px;
+            float: right;
+         }
+         .section {
+            height: 200px;
+            width: 760px;
+            float: left;
+         }
+         #footer {
+            clear: both;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="header" style="background-color: aqua; height: 100px">Header</div>
+      <div id="nav" style="background-color: beige; height: 30px">Navigaiton</div>
+      <div id="wrap">
+         <div id="aside" style="background-color: cadetblue">
+            <p>Aside</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, velit deleniti temporibus provident eos corrupti dicta dolore facilis tenetur harum earum minima neque iure. Laborum earum sapiente inventore? Aliquid, necessitatibus?</p>
+         </div>
+         <div id="sec1" class="section" style="background-color: coral">
+            <p>Section1</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolore pariatur cum fugit consectetur repellat! Cupiditate vel, asperiores incidunt reiciendis illum reprehenderit doloribus aliquam est iste sint, sequi consequuntur nisi.</p>
+         </div>
+         <div id="sec2" class="section" style="background-color: blue">
+            <p>Section2</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aspernatur tenetur tempore, ducimus veniam, dignissimos libero vero ratione tempora sit voluptatibus perferendis harum in dolorum necessitatibus, nemo dolore recusandae suscipit.</p>
+         </div>
+         <div id="sec3" class="section" style="background-color: blueviolet">
+            <p>Section3</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laborum quaerat cupiditate sunt autem corrupti eligendi blanditiis possimus ullam, maxime perferendis architecto sit odit tempore vel dolorum earum non aut.</p>
+         </div>
+      </div>
+      <div id="footer" style="background-color: blanchedalmond; height: 150px">Footer</div>
+   </body>
+</html>

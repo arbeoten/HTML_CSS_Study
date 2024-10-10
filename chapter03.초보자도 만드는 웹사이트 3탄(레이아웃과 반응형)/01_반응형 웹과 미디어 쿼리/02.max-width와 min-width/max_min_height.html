@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         * {
+            margin: 0;
+            padding: 0;
+         }
+         html,
+         body {
+            height: 100%;
+         }
+
+         #wrap {
+            width: 480px;
+            height: 100%;
+            background-color: skyblue;
+            margin: 0 auto;
+            /* 뷰포트가 커져도 최대 500px보다 커지지 않음 */
+            /* max-height: 500px; */
+            min-height: 500px;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="wrap"></div>
+   </body>
+</html>

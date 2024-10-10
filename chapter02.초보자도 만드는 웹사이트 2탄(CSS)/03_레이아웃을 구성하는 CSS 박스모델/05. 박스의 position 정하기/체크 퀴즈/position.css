@@ -1,0 +1,21 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+#contents {
+   position: relative;
+   margin: 0 auto;
+   width: 800px;
+   height: 500px;
+   background-color: skyblue;
+   color: white;
+}
+
+h1 {
+   position: absolute;
+   right: 80px;
+   bottom: 100px;
+   text-shadow: 2px 2px black;
+   font-size: 96px;
+}
