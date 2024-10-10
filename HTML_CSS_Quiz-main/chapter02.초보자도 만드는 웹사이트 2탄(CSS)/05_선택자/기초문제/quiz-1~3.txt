@@ -1,0 +1,7 @@
+1.
+span.note1은 class이름이 note1인 span 태그를 의미하고
+p .note2는 p태그의 자손중 class이름이 note2인 태그를 의미한다
+
+2. !important
+
+3. .city와 p 사이에 div가 하나 더 존재해서 자식 선택자로는 작동하지 않는다. .city > div > p나 .city p로 수정

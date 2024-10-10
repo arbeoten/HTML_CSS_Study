@@ -1,0 +1,24 @@
+1. 
+block : 문서 내에서 한 영역을 차지함, height, width, margin값을 자유롭게 지정 가능
+
+inline : 영역을 차지하지않고 다른 요소와 붙여서 사용할 수 있음, height와 width는 사용 불가능하고 margin 값은 좌우만 지정 가능
+
+inline-block : block처럼 영역을 지정할수 있으나 inline처럼 다른 요소와 붙여서 사용 가능한 중간 형태
+
+2.10px->상
+20px->좌우
+30px->하
+
+3.뷰포트는 사용자가 보는 화면의 전체영역
+
+4.
+relative 타입은 요소가 원래 본인이 있어야 할 위치를 기준으로 이동함
+
+absolute 타입은 relative 속성을 가진 가장 가까운 부모의 위치를 기준으로 이동함
+
+5.
+div1은 border-box 타입으로 지정되었으므로 padding값과 border의 굵기를 전부 합친 전체 넓이가 300px x 100px로 지정됨
+
+div2는 box-sizing이 따로 지정되지 않았으므로 content-box 타입으로 작동해 컨텐츠를 넣을수 있는 영역의 넓이가 300px x 100px고 border의 굵기와 padding값이 더해져 실제 크기는 더 커짐
+
+그래서 div1과 div2는 같은 width, height를 가지고 있지만 실제 출력시 크기는 차이가 발생함

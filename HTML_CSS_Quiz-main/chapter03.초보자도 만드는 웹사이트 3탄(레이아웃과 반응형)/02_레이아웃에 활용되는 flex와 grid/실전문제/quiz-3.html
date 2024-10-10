@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         * {
+            margin: 0;
+            padding: 0;
+         }
+
+         a {
+            color: black;
+            text-decoration: none;
+         }
+
+         li {
+            list-style: none;
+         }
+
+         .wrap {
+            width: 1024px;
+            max-width: 1024px;
+            margin: 0 auto;
+         }
+
+         .menu {
+            margin: 30px 0;
+         }
+
+         .menu > .menu_sub {
+            display: flex;
+         }
+
+         .menu > .menu_sub > h2,
+         .menu > .menu_sub > div {
+            width: 50%;
+         }
+
+         .menu > .menu_sub > div {
+            text-align: right;
+            padding-right: 10px;
+         }
+
+         .toon_img1,
+         .toon_img2,
+         .toon_img3 {
+            height: 250px;
+            position: relative;
+            border-radius: 15px;
+            margin: 0 5px;
+         }
+         .toon_img1 {
+            background: #000 url(./images/webtoon1.png) center/100% 100%;
+         }
+         .toon_img2 {
+            background: #e5ca99 url(./images/webtoon2.png) center/100% 100%;
+         }
+         .toon_img3 {
+            background: #5f1818 url(./images/webtoon3.png) center/100% 100%;
+         }
+         .new {
+            display: flex;
+            justify-content: space-between;
+         }
+
+         .new_sub {
+            width: 330px;
+            height: 500px;
+         }
+         .new_sub div:last-child * {
+            padding: 1.5px 0;
+         }
+         .new_sub div:last-child p:last-child {
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+         }
+         .new_img {
+            position: absolute;
+            width: 40px;
+            margin: 8px;
+         }
+         @media all and (min-width: 668px) and (max-width: 1023px) {
+            .wrap {
+               width: 100%;
+            }
+            .new_sub {
+               width: 32.22%;
+            }
+         }
+         @media all and (max-width: 667px) {
+            .wrap {
+               width: 100%;
+            }
+            .new_sub {
+               width: 100%;
+               margin-bottom: 20px;
+            }
+            .new {
+               flex-direction: column;
+            }
+            .toon_img1,
+            .toon_img2,
+            .toon_img3 {
+               height: 400px;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <div class="wrap">
+         <div class="menu">
+            <div class="menu_sub">
+               <h2>이달의 신규 웹툰</h2>
+               <div>
+                  <a href="#"> 신작웹툰 더보기 </a>
+               </div>
+            </div>
+         </div>
+         <ul class="new">
+            <li class="new_sub">
+               <div class="toon_img1"><img src="./images/new_icon.png" alt="뉴" class="new_img" /></div>
+               <div>
+                  <h3><a href="#">웹툰제목</a></h3>
+                  <p><a href="#">작가명/작가명/작가명</a></p>
+                  <p>줄거리 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor exercitationem autem numquam totam officiis dolores recusandae, voluptate ea repudiandae sint nam officia quam cumque rem aliquid amet reiciendis laboriosam optio?</p>
+               </div>
+            </li>
+
+            <li class="new_sub">
+               <div class="toon_img2"><img src="./images/new_icon.png" alt="뉴" class="new_img" /></div>
+               <div>
+                  <h3><a href="#">웹툰제목</a></h3>
+                  <p><a href="#">작가명/작가명/작가명</a></p>
+                  <p>줄거리 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor exercitationem autem numquam totam officiis dolores recusandae, voluptate ea repudiandae sint nam officia quam cumque rem aliquid amet reiciendis laboriosam optio?</p>
+               </div>
+            </li>
+
+            <li class="new_sub">
+               <div class="toon_img3"><img src="./images/new_icon.png" alt="뉴" class="new_img" /></div>
+               <div>
+                  <h3><a href="#">웹툰제목</a></h3>
+                  <p><a href="#">작가명/작가명/작가명</a></p>
+                  <p>줄거리 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor exercitationem autem numquam totam officiis dolores recusandae, voluptate ea repudiandae sint nam officia quam cumque rem aliquid amet reiciendis laboriosam optio?</p>
+               </div>
+            </li>
+         </ul>
+      </div>
+   </body>
+</html>
